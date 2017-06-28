@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3e7745718cfc9fa40a335297fb88990c
+timeCreated: 1493443210
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - paddleBall: {fileID: 8300000, guid: deb7f204689108943bf5b11ac1d1d77d, type: 3}
+  - brickBall: {fileID: 8300000, guid: 6f9ffe61e0a18c8408de40e6a61a5fa1, type: 3}
+  - wallBall: {fileID: 8300000, guid: a67159acbd7db13489c1b6f42e854552, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

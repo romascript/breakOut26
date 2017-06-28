@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\borderColision.cs">
+    <Files>
+      <File FileName="Assets\Sounds\Sound Effects\PlaySound.cs" Line="7" Column="35" />
+      <File FileName="Assets\ScriptBolita.cs" Line="13" Column="3" />
+      <File FileName="Assets\DestruirCuandoEsGolpeado.cs" Line="21" Column="6" />
+      <File FileName="Assets\borderColision.cs" Line="4" Column="46" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
