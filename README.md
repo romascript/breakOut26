@@ -1,22 +1,44 @@
-Bugs corregidos en el menu,
-Bugs corregidos en el score,
-Bugs corregidos en las opciones del
-nivel 1 y 2.
+## Sinopsis
 
-25/05/17 Roman Pozzuto.
+Es un proyecto que trata la realidad aumentada. Se llama "BreakOut 26" igual que el nombre del juego. Esta basado en el BreakOut '76 (primera version lanzada por Atari), a 
+diferencia del viejo BreakOut '76 que su paddle se movia con las flechitas del teclado, en esta nueva version se mueve a traves de la posicion en donde se encuentre el objeto 
+(detecta el color de este) definido, capturado por una webcam, etc.
 
-Reemplazo del archivo OpenCvDevelop.css
+## Motivacion
 
-29/05/17 Roman Pozzuto.
+Este proyecto surgio a traves de las ideas de un grupo de alumnos de 5to-11, de la E.T N°26. El proyecto fue aprobado por el docente a cargo y desde ahi comenzamos a desarrollarlo,
+la mayor motivacion es que es un proyecto que representa a nuestra escuela y a nuestra especialidad.
 
-6/6/17 Roberto Vazquez {
--Re-testeo
+## Demostracion de codigo
 
--Merge local de dist. branches y push a master (Cof cof, alguien creó una branch local, subio los archivos de la branch local a Drive y termino todo un embole)
-
+public static void pauseGame()
+{
+    if (Time.timeScale == 1)
+    {  
+        Time.timeScale = 0;
+        GameObject.Find("btn_pause").GetComponentInChildren<Text>().text = "Play";
+        PlaySound.Instance.breakOut.Pause();
+    }
+    
+    else if (Time.timeScale == 0)
+    {   
+        Time.timeScale = 1;
+        GameObject.Find("btn_pause").GetComponentInChildren<Text>().text = "Pause";
+        PlaySound.Instance.breakOut.Play();
+    }
 }
 
+## Instalacion
 
-Para instalar el juego se debe compilar usando unity de 32 bits.
-Actualmente tiene la parte de calib. incorporada (no de la mejor manera de todos modos), por lo cual se debería tener el juego compilado sin calibracion y asimismo el juego compilado con la calibracion incluida.
-La calib. se abre en ventanas nuevas que claramente se superponen al juego, por lo cual esa version solo debería ser usada para calibrar el juego en el lugar donde se va a ejecutar.
+Para comenzar a contribuir con este proyecto solo es necesario obtener la direccion del repositorio y clonar la carpeta. Anteriormente se necesita tener instalada la ultima version
+del Unity y la ultima version del Visual Studio Community 2017 (todo esto deber estar en nuestra PC).
+
+
+## Colaboradores
+
+Repositorio: https://gitlab.com/17511/breakout26.git
+Desarrolladores: @romanrp99 , @Cazadraco, @Sojennlopez .
+
+## License
+
+A short snippet describing the license (MIT, Apache, etc.)
