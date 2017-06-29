@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using OpenCvSharp;   // OpenCVSharp 2.4.9
@@ -174,15 +174,12 @@ public class OpenCVDevelop : MonoBehaviour {
         Cv.Dilate(dilate1, dilate);
         //Mostrar imagen
         //   Cv.ShowImage("Erode", erode);
-        if (first)
-        {
- // Cv.ShowImage("Dilate", dilate);
-        }
+       
       
         //Calculo de Moments
          Cv.Moments(dilate, out moments, true);
         var moment10 = Cv.GetSpatialMoment(moments, 1, 0);
-        var moment01 = Cv.GetSpatialMoment(moments, 0, 1);
+        
         var moment00 = Cv.GetSpatialMoment(moments, 0, 0);
 
 
@@ -361,3 +358,4 @@ public class OpenCVDevelop : MonoBehaviour {
 }
 
 
+s
