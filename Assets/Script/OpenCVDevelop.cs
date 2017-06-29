@@ -151,7 +151,7 @@ public class OpenCVDevelop : MonoBehaviour {
 
 
         //Moments();
-
+if(first){
         erode = Cv.CreateImage(Cv.GetSize(ImgThresholded), BitDepth.U8, 1);
         erode1= Cv.CreateImage(Cv.GetSize(ImgThresholded), BitDepth.U8, 1);
         erode2 = Cv.CreateImage(Cv.GetSize(ImgThresholded), BitDepth.U8, 1);
@@ -159,6 +159,8 @@ public class OpenCVDevelop : MonoBehaviour {
         dilate1= Cv.CreateImage(Cv.GetSize(ImgThresholded), BitDepth.U8, 1);
         dilate2 = Cv.CreateImage(Cv.GetSize(ImgThresholded), BitDepth.U8, 1);
         CvMoments moments;
+    first=false;
+    }
         //Si es necesario se pueden realizar mas "pasadas" de Erode y Dilate añadiendo un int con la cantidad requerida como 3er parametro.
         //Borra los bordes, si el objeto es muy pequeño será borrado completamente por el pincel de borrado usado (5px si mal no recuerdo). Posterior a esto se agrandan los bordes de los objetos que restan, para asi
         //Recuperar la forma del obj que se esta buscando definir. De esta forma se elimina el ruido de imagen que puede llegar a producir la cámara. 
