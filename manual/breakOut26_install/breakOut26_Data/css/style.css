@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "arcade_font";
+  src: url("arcadeclassic.regular.ttf");
+}
+
+body {
+	background-color: #fb5656;
+	color: white;
+	font-family: arcade_font;
+	letter-spacing: 2px;
+}
+
+img {
+	width:100%;
+	height: 50%;
+}
+
+.alert-font {
+	color: red;
+}
+
+.comment-font {
+	color: yellow;
+}
+
+.subray{
+	color: #fb5656;
+	border-bottom: 2px solid #fb5656;	
+}
+
+#index {
+	background-color: #000000;
+	border: 2px dashed #ffffff;
+	width: 80%;
+	padding: 15px 35px 15px 35px;
+}
+
+#index ul li{
+	list-style-type: square;
+}
+
+#container-requerimientos ul{
+	border: 2px dashed #ffffff;
+	padding: 15px 35px 15px 35px;
+	background-color: #000000;
+	margin-bottom: 20px;
+	width: 80%;
+}
+
+#container-instalacion ul {
+	border: 2px dashed #ffffff;
+	list-style: none;
+	padding: 15px 35px 15px 35px;
+	background-color: #000000;
+	margin-bottom: 20px;
+	width: 80%;
+}
+
+#container-thanks ul{
+	border: 2px dashed #ffffff;
+	padding: 15px 35px 15px 35px;
+	background-color: #000000;
+	margin-bottom: 20px;
+	width: 80%;
+}
+
+#container-gral {
+
+}
+
+#container-gral #title{
+	text-align: center;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manual</title>
+	<link rel="stylesheet" type="text/css" href="breakOut26_Data/manual/css/style.css">
+	<script type="text/javascript" src="breakOut26_Data/manual/"></script>
+</head>
+<body>
+	<div id="container-gral">
+		<h1>breakout26 (manual de juego)</h1>
+		<div id="index">
+			<ul>
+				<li id="int-jue"><h2>Instrucciones de juego:</h2></li>
+				<ul>
+					<li><a href="#j1">Menu</a></li>
+					<li><a href="#j2">Igrese su nombre</a></li>
+					<li><a href="#j3">OpenCV Config</a></li>
+					<li><a href="#j4">Mover paddle</a></li>
+					<li><a href="#j5">Opciones</a></li>
+				</ul>
+			</ul>
+		</div>
+		<div id="container-juego">
+			<h2>Instrucciones de juego:</h2>
+			<ul>
+				<li id="j1">
+					<h3><span class="subray">Menu:</span> Ahora nos encontramos en el menu del juego, el cual contiene las siguientes opciones: <a href="#j4">Play</a>, Exit, <a href="#j3">Config</a>, Manual</h3>
+					<img src="breakOut26_Data/manual/img/menu.jpg">
+				</li>
+				<li id="j2">
+					<h3><span class="subray">Ingrese su nombre: </span> El juego cuenta con un registro de usuarios. Itroducen su nombre en la caja de texto y le damos click a "NEXT".</h3>
+					<img src="breakOut26_Data/manual/img/user_name.jpg">
+				</li>
+				<li id="j3">
+					<h3><span class="subray">OpenCV Config:</span> Las siguientes barras Huelow, Huehigh, Satlow, Sathigh son las que usaremos para detectar el color de nuestro objeto. En el cuadro inferior de esta captura vemos que tiene manchas azules. Esto significa que el color de la caja (rojo) a sido detectado. Podemos usar cualquier color. Sea el color que sea, deben aparecer estas manchas azules, porque son las que representan a nuestro objeto(Mientras mas tomen la forma del objeto mejor funcionara el juego cuando tengamos que mover el paddle).</h3>
+					<img src="breakOut26_Data/manual/img/opencvcalib.jpg">
+				</li>
+				<li id="j4">
+					<h3><span class="subray">Mover paddle:</span> Como vemos en las animaciones, para poder trasladar al paddle de lugar, debemos mover nuestro objeto (<a href="#j3">previamente configurado</a>) hacia la izquierda o la derecha, segun la direccion de la bola (Es la que queremos golpear). En caso de que no se mueva nuestro paddle, deberemos checkear bien las <a href="#j3">configuraciones</a>.</h3>
+					<table>
+						<tr>
+							<td><img src="breakOut26_Data/manual/img/box.gif"></td>
+							<td><img src="breakOut26_Data/manual/img/paddle-mov.gif"></td>
+						</tr>
+					</table>
+					<!--<img src="breakOut26_Data/manual/img/ready_go1.jpg">-->
+				</li>
+				<li id="j5">
+					<h3><span class="subray">Opciones:</span> *1 Tenemos un contador de vidas (lifes) y cuando se acaben perderas el juego. *2 En la parte superior izquierda hay un un contador de scores el cual mostrara tu puntaje con respecto a la cantidad de ladrillos destruidos. *3 En la parte inferior derecha encontraremos un menu:</h3>
+					<img src="breakOut26_Data/manual/img/ready_go2.jpg">
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
