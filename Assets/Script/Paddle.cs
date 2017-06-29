@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using System.Xml;
@@ -54,7 +54,8 @@ public class Paddle : MonoBehaviour {
 		GetComponent<Rigidbody2D>().velocity = Vector2.right * h * speed;
         if (OpenCVDevelop.posX > 0) {
             float postemp =float.Parse(((OpenCVDevelop.posX*0.0122)-3.75).ToString());
-            transform.position = new Vector3(postemp, -4.5f/*-4*/, 0);
+            if(OpenCVDevelop.posX<600){ transform.position = new Vector3(postemp, -4.5f/*-4*/, 0);  }
+            
         }
     }
 
