@@ -64,11 +64,11 @@ public class OpenCVDevelop : MonoBehaviour {
         {   // If there is at least one camera
 
             _webcamTexture = new WebCamTexture(devices[0].name);  // Grab first camera
-           // _webcamTexture2 = _webcamTexture;                                                  //Debug.Log ("Device name = " + devices [0].name);
+                                                                  // _webcamTexture2 = _webcamTexture;                                                  //Debug.Log ("Device name = " + devices [0].name);
 
             // Attach camera to texture of the gameObject
             gameObject.GetComponent<Renderer>().material.mainTexture = _webcamTexture;
-           
+
             // Un-mirror the webcam image
             if (FlipLeftRightAxis)
             {
@@ -86,13 +86,13 @@ public class OpenCVDevelop : MonoBehaviour {
                                     -transform.localScale.y, transform.localScale.z);
             }
 
-     
+
             _webcamTexture.Play();  // Play the video source
 
             // Get the vieo source image width and height
             imWidth = _webcamTexture.width;
             imHeight = _webcamTexture.height;
-
+        
             // Create standard CvMat image based on web camera video input
             // 3 channels for color images with unsigned 8-bit depth of color values
             videoSourceImagex = new CvMat(imHeight, imWidth, TriColorMatrix);
@@ -151,21 +151,21 @@ public class OpenCVDevelop : MonoBehaviour {
 
 
         //Moments();
-if(first){
+
         erode = Cv.CreateImage(Cv.GetSize(ImgThresholded), BitDepth.U8, 1);
         erode1= Cv.CreateImage(Cv.GetSize(ImgThresholded), BitDepth.U8, 1);
         erode2 = Cv.CreateImage(Cv.GetSize(ImgThresholded), BitDepth.U8, 1);
         dilate = Cv.CreateImage(Cv.GetSize(ImgThresholded), BitDepth.U8, 1);
         dilate1= Cv.CreateImage(Cv.GetSize(ImgThresholded), BitDepth.U8, 1);
         dilate2 = Cv.CreateImage(Cv.GetSize(ImgThresholded), BitDepth.U8, 1);
+        
+ 
         CvMoments moments;
-    first=false;
-    }
         //Si es necesario se pueden realizar mas "pasadas" de Erode y Dilate añadiendo un int con la cantidad requerida como 3er parametro.
         //Borra los bordes, si el objeto es muy pequeño será borrado completamente por el pincel de borrado usado (5px si mal no recuerdo). Posterior a esto se agrandan los bordes de los objetos que restan, para asi
         //Recuperar la forma del obj que se esta buscando definir. De esta forma se elimina el ruido de imagen que puede llegar a producir la cámara. 
         // Si se necesita una supresion de ruido mayor lo mejor es usar un blur gausseano antes de Erode y Dilate.
-         Cv.Erode(ImgThresholded, erode);
+        Cv.Erode(ImgThresholded, erode);
         Cv.Erode(erode, erode1);
         Cv.Erode(erode1, erode2); 
         Cv.Erode(erode2, erode);
@@ -360,4 +360,3 @@ if(first){
 }
 
 
-s
