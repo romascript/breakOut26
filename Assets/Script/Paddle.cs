@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using System.Xml;
@@ -52,10 +52,12 @@ public class Paddle : MonoBehaviour {
     void FixedUpdate () {
 		float h = Input.GetAxisRaw("Horizontal");
 		GetComponent<Rigidbody2D>().velocity = Vector2.right * h * speed;
-        if (OpenCVDevelop.posX > 0) {
+		int a;
+		
+		bool isNum = int.TryParse(OpenCVDevelop.posX.ToString (), out a); 
+        if (OpenCVDevelop.posX > 2 && OpenCVDevelop.posX<608) {
             float postemp =float.Parse(((OpenCVDevelop.posX*0.0122)-3.75).ToString());
-            if(OpenCVDevelop.posX<600){ transform.position = new Vector3(postemp, -4.5f/*-4*/, 0);  }
-            
+            transform.position = new Vector3(postemp, -4.5f/*-4*/, 0);
         }
     }
 
