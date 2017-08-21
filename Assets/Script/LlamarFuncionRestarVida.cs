@@ -18,7 +18,7 @@ public class LlamarFuncionRestarVida : MonoBehaviour {
         Destroy(GameObject.Find("Corazon" + vidas));
         temp.y = 200.0f;
         GameObject.Find("bolitacrota").transform.position = temp;
-        vidas = vidas - 1;
+        //vidas = vidas - 1; //Temporalmente desactivadas por testings.
         temp.y = -4.45f;
         yield return new WaitForSeconds(1);
         GameObject.Find("Paddle").transform.position = temp;
