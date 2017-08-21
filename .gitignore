@@ -1,3 +1,4 @@
 #ignore this folders.
-web/*
-manual/*
+/web/*
+/manual/*
+/xml/*
