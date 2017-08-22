@@ -2,3 +2,5 @@
 web/*
 manual/*
 xml/*
+.vs/*
+bin/*
