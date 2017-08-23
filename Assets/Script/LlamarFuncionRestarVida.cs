@@ -10,9 +10,9 @@ public class LlamarFuncionRestarVida : MonoBehaviour {
 	
     void OnCollisionEnter2D(Collision2D col)
     {
-        StartCoroutine(CRout());
-       
+        StartCoroutine(CRout());     
     }
+
     IEnumerator CRout()
     {
         Destroy(GameObject.Find("Corazon" + vidas));

@@ -22,7 +22,7 @@ public class Paddle : MonoBehaviour {
     {
         cantBricksNow = Datos.Cantidad;
 
-        Debug.Log(cantBricksNow);
+        //Debug.Log(cantBricksNow);
 
         if (scene.name == "scene1")
         {
