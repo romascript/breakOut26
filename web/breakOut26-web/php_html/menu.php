@@ -25,8 +25,8 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Manual <span class="icon-bar glyphicon glyphicon-book"></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Manual de instalacion</a></li>
-              <li><a href="#">Manual de instrucciones</a></li>
+              <li><a href="manuals/breakout26_install.html">Manual de instalacion</a></li>
+              <li><a href="manuals/breakout26_manual.html">Manual de instrucciones</a></li>
             </ul>
           </li>
         </ul>

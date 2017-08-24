@@ -74,10 +74,10 @@
 						</div>
 						<div class="tab-pane fade" id="git">
 						  	<h1>Git:</h1>
-						  	<p>Para descargarte el codigo fuente de nuestro proyecto deberas hacer click en el boton "Download" y seguir los siguientes pasos.</p>
+						  	<p>Para descargar el codigo fuente de nuestro proyecto deberas hacer click en el boton "Download" y seguir los siguientes pasos.</p>
 						  	<a class="github-button" href="https://github.com/romascript/breakOut26/archive/master.zip" data-size="large" aria-label="Download romascript/breakOut26 on GitHub" align="center" >Download</a>
 						  	<h1>Tutorial git:</h1>
-						 	<iframe width="600" height="315" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+						 	<iframe width="560" height="315" src="https://www.youtube.com/embed/KRPxX20kUbU" frameborder="0" allowfullscreen></iframe>
 						</div>
 						<div class="tab-pane fade" id="tools">
 							<h1>Software utilizados:</h1>
@@ -121,17 +121,17 @@
 							<ul>
 								<li>
 									<h3>Exe Installer (x86，For Windows):</h3>
-									<button class="btn btn-primary">Download <span class="icon-bar glyphicon glyphicon-download"/></button>
+									<a href="https://mega.nz/#!wAh2gb7K!g6HTFlXKdWTdnzLsmZjbIleBdwh0pFK5HMo4CCZHZog"><button class="btn btn-primary">Download <span class="icon-bar glyphicon glyphicon-download"/></button></a>
 								</li>
 								<li>
 									<h3>Portable (For Windows, Mac & Linux):</h3>
-									<button class="btn btn-primary">Download <span class="icon-bar glyphicon glyphicon-download"/></button>
+									<a href="https://mega.nz/#!YcBwQS6Q!c_hmekQ5YBv6_s96mFNhQkuOMREy3vzx5igx52VxNq4"><button class="btn btn-primary"> Download <span class="icon-bar glyphicon glyphicon-download"/></button></a>
 								</li>
 							</ul>
 							<h1>Tutoriales:</h1>
 							<ul>
-								<li><a href="#">Manual de instalacion.</a></li>
-								<li><a href="#">Manual de instrucciones.</a></li>
+								<li><a href="manuals/breakout26_install.html">Manual de instalacion.</a></li>
+								<li><a href="manuals/breakout26_manual.html">Manual de instrucciones.</a></li>
 							</ul>
 						</div>
 					</div>
@@ -150,8 +150,6 @@
 						  href="https://twitter.com/roma0k"
 						  data-size="large">
 						Follow @TwitterDev</a>
-						<br>
-						<a class="github-button" href="https://github.com/romascript" data-size="large" aria-label="Follow @romascript on GitHub">Follow @romascript</a>
 		    		</div>
 		    		<div id="grid-two">
 		    			<img class="profile-photos" src="https://scontent-eze1-1.cdninstagram.com/t51.2885-19/s150x150/15057142_207578116352588_792044514012299264_a.jpg">
