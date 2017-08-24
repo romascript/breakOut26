@@ -7,11 +7,6 @@ using System.Xml;
 
 public class funciones : MonoBehaviour {
 
-    /*public void testPaddle()
-    {
-
-    }*/
-
     public void pauseGame()
     {
         if (Time.timeScale == 1)
@@ -58,12 +53,6 @@ public class funciones : MonoBehaviour {
             PlaySound.Instance.paddleBall.mute = true;
             PlaySound.Instance.wallBall.mute = true;
         }
-    }
-
-    public void state1()
-    {
-        CalibScript.state = 1;
-        Debug.Log("State set to:"+CalibScript.state.ToString());
     }
 
     public void saveParameters()

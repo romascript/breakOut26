@@ -59,6 +59,7 @@ public class MenuCTRL : MonoBehaviour
     {
         OpenCVDevelop._webcamTexture.Stop();
         SceneManager.LoadScene("menu");
+        Time.timeScale = 1;
     }
 
     public void loadConfig(string sceneName)
