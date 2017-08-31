@@ -1,4 +1,6 @@
-![Break Out 26: Videogame remasterized. ](Assets/Img/breakOut26.png)
+<div align="center" bgcolor="black">
+    ![Break Out 26: Videogame remasterized. ](Assets/Img/breakOut26.png)
+</div>
 
 Es un proyecto que utiliza realidad aumentada. Denominado "BreakOut 26" igual que el nombre del juego. Esta basado en el BreakOut '76 (juego creado por Atari), a 
 diferencia del viejo BreakOut '76 que su paddle se movia con las flechitas del teclado, en esta nueva version se mueve a traves de la posicion en donde se encuentre el objeto 
