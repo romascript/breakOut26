@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "arcade-font";
+  src: url("../fonts/arcadeclassic.regular.ttf");
+}
+
+body{
+	background-color: #df4953  !important;
+}
+
+p {
+	font-size: 25px !important;
+}
+
+#index{
+	background-color: url('');
+}
+
+#index h3 {
+	color: #ffffff;
+}
+
+#index img,h3 {
+	margin-left: 1.5%;
+}
+
+#navbar-social{
+	position: absolute;
+    bottom: 1%;
+    right: 0.5%;
+}
+
+#title{
+	font-family: arcade-font;
+}
+
+#title span:nth-child(1){
+	color:	#df4953;
+}
+
+#title span:nth-child(2){
+	color: #df4953;
+}
+
+#devs h1 {
+	margin-bottom: 100px;
+}
+
+#grid{
+	width: 100%;
+	display: grid;
+  	grid-template-columns: 33% 33% 33%;
+}
+
+#wiki-devs #proyecto #tools a:link, a:visited{
+	color: yellow;
+}
+
+.profile-photos{
+	height: 125px;
+	width: 125px;
+	border-radius: 50%; 
+}
+
+.publish{
+	height: 50px;
+	width: 125px;
+}
+
+.img-publish{
+	height: 50px;
+	width: 125px;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+.tab-page{
+	text-align: justify;
+	width: 70%;
+}
+
+/*responsive*/
+@media screen and (max-width: 767px) {
+	.twitter-follow-button{
+		display: none;
+	}
+
+	.tab-page{
+		text-align: left;
+	}
+}

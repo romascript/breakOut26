@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <parameters>
-  <hueHigh>255</hueHigh>
-  <hueLow>141</hueLow>
-  <satHigh>255</satHigh>
-  <satLow>63</satLow>
+  <hueHigh>7</hueHigh>
+  <hueLow>0</hueLow>
+  <satHigh>226</satHigh>
+  <satLow>130</satLow>
 </parameters>

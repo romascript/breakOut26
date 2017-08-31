@@ -92,6 +92,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\CalibScript.cs" />
     <Compile Include="Assets\Script\Datos.cs" />
+    <Compile Include="Assets\Script\Datos2.cs" />
     <Compile Include="Assets\Script\DestruirCuandoEsGolpeado.cs" />
     <Compile Include="Assets\Script\LlamarFuncionRestarVida.cs" />
     <Compile Include="Assets\Script\MenuCTRL.cs" />
@@ -104,6 +105,8 @@
     <Compile Include="Assets\Script\botonSalir.cs" />
     <Compile Include="Assets\Script\destruitBricksNaranjas.cs" />
     <Compile Include="Assets\Script\funciones.cs" />
+    <Compile Include="Assets\Script\getUser.cs" />
+    <Compile Include="Assets\Script\valueUpdate.cs" />
     <Compile Include="Assets\Script\winScreen.cs" />
     <Compile Include="Assets\Scripts\Parallel.cs" />
     <Compile Include="Assets\Sounds\Sound Effects\PlaySound.cs" />

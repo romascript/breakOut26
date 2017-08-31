@@ -41,10 +41,10 @@ public class MenuCTRL : MonoBehaviour
         SceneManager.LoadScene("scene1");
     }
     
-    public void loadSceneCalibtoPlay ( string sceneName) 
+    public void loadSceneCalibtoMenu ( string sceneName) 
     {
         CalibScript._webcamTexture.Stop();
-        SceneManager.LoadScene("userName");
+        SceneManager.LoadScene("menu");
       
     }
 
@@ -54,10 +54,12 @@ public class MenuCTRL : MonoBehaviour
         SceneManager.LoadScene("scene1");
         
     }
+
     public void loadMenu(string sceneName)
     {
         OpenCVDevelop._webcamTexture.Stop();
         SceneManager.LoadScene("menu");
+        Time.timeScale = 1;
     }
 
     public void loadConfig(string sceneName)

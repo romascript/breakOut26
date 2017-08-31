@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manual</title>
+	<link rel="stylesheet" type="text/css" href="css/style_manual.css">
+</head>
+<body>
+	
+	<div id="container-gral">
+		<h1>breakout26 (manual de juego)</h1>
+		
+		<div id="index">
+			<ul>
+				<li id="int-jue"><h2>Indice:</h2></li>
+				<ul>
+					<li><a class="a" href="#i1">Descripcion</a></li>
+					<li><a class="a" href="#i2">Objetivo</a></li>
+						<ul>
+						</ul>
+					<li><a class="a" href="#j1">Pantalla de inicio</a></li>
+					<li><a class="a" href="#j3">OpenCV Config</a></li>
+						<ul>
+							<li><a class="b" href="#s1">Distancia (Recomendada)</a></li>
+							<li><a class="b" href="#s2">Caracteristicas del objeto (Recomendada)</a></li>
+						</ul>
+					<li><a class="a" href="#j4">Mover paddle</a></li>
+					<li><a class="a" href="#j5">Opciones</a></li>
+				</ul>
+			</ul>
+		</div>
+	
+		<div id="container-juego">
+			<ul>
+				<li id="i1">
+					<h3><center><span class="subray">Descripcion :</span></center><br> 
+						Basado en el BreakOut '76 (primera version lanzada por Atari), el BreakOut26 icluye la realidad aumentada. Esta nueva version se mueve a traves de nuestros propios movimientos frente a una camara, dandonos asi una mayor expariencia del juego. <br></h3>
+				</li>
+				<li id="i2">
+					<h3><center><span class="subray">Objetivo:</span></center><br> El objetivo del juego es destruir todos los bloques en los diferentes niveles, evitando que la pelotita caiga del paddle para no perder vidas.<br></h3>
+					<h3><span class="subray">Puntaje:</span><br>En el juego existen dos tipos de bloques a destruir: Los de color naranja y los de color rojo:<br>Los de color naranja se eliminan de dos golpes, el primero vale +10 puntos y el segundo +20. <br>
+					Los de color rojos se eliminan de un solo golpe y estos dan +10 puntos.<br></h3>
+					<h3><span class="subray">Niveles:</span><br> EL juego cuenta con un solo nivel.
+					<h3><span class="subray">Cantidad de vidas:</span><br>En el juego la cantidad de vida son 3(tres), que se van perdiendo cada vez que la pelotita cae del paddle. </h3>
+				</li>
+			</ul>
+			<h1 align="center">Instrucciones de juego:</h1>
+			<ul>
+				<li id="j1">
+					<h3><span class="subray">Pantalla de inicio:</span> Nos encontramos en la pantalla de inicio, en la que tenemos las siguiente opciones:<br> 1) Ingresar nuestro nombre: para jugar ponemos nuestro nombre y le damos a play. <br> 2) Exit: Es el boton para salir del juego, lo apretamos y nos lleva al escritorio de nuestra pc. <br> 3) Manual: Es el boton para ir al manual de jugador. <br>
+					4)Configuraciones: Es el boton para entrar a las configuraciones de la camara (Explicadas mas abajo).
+					 </h3>
+					<img src="img/menu.jpg">
+				</li>
+				<li id="j3">
+					<h3><span class="subray">OpenCV Config:</span> Las siguientes barras Huelow, Huehigh, Satlow, Sathigh son las que usaremos para detectar el color de nuestro objeto. En el cuadro inferior de esta captura vemos que tiene manchas azules. Esto significa que el color dtl objeto (em este caaso rojo) a sido detectado. Podemos usar cualquier color. Sea el color que sea, deben aparecer estas manchas azules, porque son las que representan a nuestro objeto(Mientras mas tomen la forma del objeto mejor funcionara el juego cuando tengamos que mover el paddle).</h3>
+					<img src="img/opencvcalib.jpg">
+				</li>
+				<li id="s1">
+					<h3><span class="subray">Distancia (Recomendada): </span> La distancia que se recomienda para poder jugarlo con la mayor comodidad posible es de aproximadamente 1 (un) metro. Esto va evitar que el el paddle vibre y va mejora la precision del movimiento. </h3>
+				</li>
+				<li id="s2">
+					<h3><span class="subray">Caracteristicas del objeto(Recomendada):</span>  Aunque se pueda usar cualquier onbjeto, para una mayor comodiad en el juego es preferible que este sea de una forma rectangular o cuadrada, de un color opaco y de preferencia de un color llamativo (Por ej: Verde fluor).</h3>
+				</li>
+				<li id="j4">
+					<h3><span class="subray">Mover paddle:</span> Como vemos en las animaciones, para poder trasladar al paddle de lugar, debemos mover nuestro objeto (<a class="a"href="#j3">previamente configurado</a>) hacia la izquierda o la derecha, segun la direccion de la bola (Es la que queremos golpear). En caso de que no se mueva nuestro paddle, deberemos checkear bien las <a class="a" href="#j3">configuraciones</a>.</h3>
+					<table>
+						<tr>
+							<td><img src="img/box.gif"></td>
+							<td><img src="img/paddle-mov.gif"></td>
+						</tr>
+					</table>
+					<!--<img src="breakOut26_Data/manual/img/ready_go1.jpg">-->
+				</li>
+				<li id="j5">
+					<h3><span class="subray">Opciones:</span><br> 1) Tenemos un contador de vidas (lifes) y cuando se acaben perderas el juego. <br> 2) En la parte superior izquierda hay un un contador de scores el cual mostrara tu puntaje con respecto a la cantidad de ladrillos destruidos. <br> </h3>
+					<img src="img/ready_go2.jpg"><br>
+					<ul>
+						<h3> 3) En la parte inferior derecha encontraremos un menu:</h3> 
+						<li>Paddle: Permite mover el paddle pausando el juego por un momento. </li>
+						<li>Pause: Boton con el que le ponemos pausa al juego, para volver a jugar se apreta el mismo boton.</li>
+						<li>Soun on/off: Boton con el que podemos apagar/encender los sonidos.</li>
+						<li>Music on/off: Boton con el que podemos apagar/encender la musica.</li>
+						<li>Menu: Apretando este boton volvemos a la pantalla de inicio.</li>
+					</ul>
+				</h3>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+</body>
+</html>

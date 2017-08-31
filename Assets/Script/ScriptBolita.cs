@@ -12,7 +12,7 @@ public class ScriptBolita : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
+        GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {

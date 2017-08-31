@@ -8,28 +8,26 @@ using System.IO;
 public class Paddle : MonoBehaviour {
 
     int cantBricksNow;
-    public Scene scene;
+    private Scene scene;
 
     void Start()
     {   
         //Obtengo el nombre de la escena.
         Datos.Cantidad = 0;
         scene = SceneManager.GetActiveScene();
-        Debug.Log(scene.name);
+        //Debug.Log(scene.name);
     }
 
     void Update()
     {
         cantBricksNow = Datos.Cantidad;
 
-        Debug.Log(cantBricksNow);
-
         if (scene.name == "scene1")
         {
             if (cantBricksNow == 42)
             {
                 saveScore();
-                Debug.Log("Next Level");
+                //Debug.Log("Next Level");
                 SceneManager.LoadScene("winScreen");
                 //SceneManager.LoadScene("level2");
             }
@@ -48,13 +46,16 @@ public class Paddle : MonoBehaviour {
         }*/
     }
 
-    public float speed = 1;
+    public float speed = 2;
     void FixedUpdate () {
 		float h = Input.GetAxisRaw("Horizontal");
 		GetComponent<Rigidbody2D>().velocity = Vector2.right * h * speed;
-        if (OpenCVDevelop.posX > 0) {
+		int a;
+		
+		bool isNum = int.TryParse(OpenCVDevelop.posX.ToString (), out a); 
+        if (OpenCVDevelop.posX > 2 && OpenCVDevelop.posX<608) {
             float postemp =float.Parse(((OpenCVDevelop.posX*0.0122)-3.75).ToString());
-            transform.position = new Vector3(postemp, -4.5f/*-4*/, 0);
+            transform.position = new Vector3(postemp, -4.5f, 0);
         }
     }
 
@@ -66,7 +67,7 @@ public class Paddle : MonoBehaviour {
         if (File.Exists(pathxml))
         {
 
-            Debug.Log("Exist!");
+            //Debug.Log("Exist!");
 
             XmlDocument doc = new XmlDocument();
             doc.Load(pathxml);
@@ -91,7 +92,7 @@ public class Paddle : MonoBehaviour {
         else
         {
 
-            Debug.Log("Not Exist!");
+            //Debug.Log("Not Exist!");
 
             XmlDocument doc = new XmlDocument();
 
