@@ -1,5 +1,5 @@
 <div align="center" bgcolor="black">
-    ![Break Out 26: Videogame remasterized. ](Assets/Img/breakOut26.png)
+![Break Out 26: Videogame remasterized. ](Assets/Img/breakOut26.png)
 </div>
 
 Es un proyecto que utiliza realidad aumentada. Denominado "BreakOut 26" igual que el nombre del juego. Esta basado en el BreakOut '76 (juego creado por Atari), a 
