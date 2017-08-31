@@ -17,7 +17,7 @@ diferencia del viejo BreakOut '76 que su paddle se movia con las flechitas del t
 Este proyecto surgio a traves de las ideas de un grupo de alumnos de 5to-11, de la E.T N°26. El proyecto fue aprobado por el docente a cargo y desde ahi comenzamos a desarrollarlo,
 la mayor motivacion es que es un proyecto que representa a nuestra escuela y a nuestra especialidad.
 
-### Instalacion
+## Instalacion
 
 Para poder desarrollar este proyecto es necesario tener los siguientes softwares:
 
@@ -25,10 +25,10 @@ Para poder desarrollar este proyecto es necesario tener los siguientes softwares
 2. Visual Studio Community 2017.
 3. Git Bash (desktop o portable).
 
-### Herramientas
+## Herramientas
 
-1.Una webcam.
-2.Un objeto de color rojo (el archivo xml "webcam_config.xml" viene configurado para detectar un umbral rojo).
+1. Una webcam.
+2. Un objeto de color rojo (el archivo xml "webcam_config.xml" viene configurado para detectar un umbral rojo).
 
 ## Comunidad
 
