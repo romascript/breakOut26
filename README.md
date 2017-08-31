@@ -27,8 +27,8 @@ Para poder desarrollar este proyecto es necesario tener los siguientes softwares
 
 ## Herramientas
 
-1.Una webcam.
-2.Un objeto de color rojo (el archivo xml "webcam_config.xml" viene configurado para detectar un umbral rojo).
+1. Una webcam.
+2. Un objeto de color rojo (el archivo xml "webcam_config.xml" viene configurado para detectar un umbral rojo).
 
 ## Comunidad
 
