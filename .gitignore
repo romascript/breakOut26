@@ -1,6 +1,4 @@
 #ignore this folders.
 web/*
-manual/*
 xml/*
 .vs/*
-bin/*
